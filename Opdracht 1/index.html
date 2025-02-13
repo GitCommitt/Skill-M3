@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nintendo | Daan Pronk</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js" defer></script>
+</head>
+<body id="js--body">
+    <header class="header">
+        <h1 class="headertitle">Nintendo</h1>
+        <nav role="navigation">
+            <div id="menuToggle">
+                <input type="checkbox" id="menuCheckbox"/>
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul id="menu">
+                    <li>
+                        <a href="#">
+                            <label for="menuCheckbox" onclick="this.parentNode.click();">Home</label>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#about">
+                            <label for="menuCheckbox" onclick="this.parentNode.click();">About</label>
+                        </a>
+                    </li>
+                    <li><label for="menuCheckbox"><a>Info</a></label></li>
+                    <li><label for="menuCheckbox"><a>Contact</a></label></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <figure class="bigfigure">
+            <img src="https://assets.nintendo.com/image/upload/f_auto/q_auto/dpr_1.5/c_scale,w_400/ncom/en_US/hardware/switch/switch-hw-pmp/oled/06-compatibility" alt="">
+        </figure>
+        <section class="collections">
+            <h2 class="collectionstitle">Collections</h2>
+            <ul class="collectionsList">
+                <li class="collectionsListItem">
+                    <img src="https://assets.nintendo.com/image/upload/f_auto/q_auto/dpr_1.5/c_scale,w_400/ncom/en_US/hardware/switch/switch-hw-pmp/oled/05-speakers" alt="">
+                </li>
+                <li class="collectionsListItem">
+                    <img src="https://assets.nintendo.com/image/upload/f_auto/q_auto/dpr_1.5/c_scale,w_600/Nintendo%20Direct/2023/HTZmFLsf7ynX/HEGS_001_heroRARR_04_1_ST_R_ad-0" alt="">
+                </li>
+                <li class="collectionsListItem">
+                    <img src="https://assets.nintendo.com/image/upload/f_auto/q_auto/dpr_1.5/c_scale,w_400/ncom/en_US/hardware/switch/switch-hw-pmp/oled/02-stand" alt="">
+                </li>
+                <li class="collectionsListItem">
+                    <img src="https://assets.nintendo.com/image/upload/f_auto/q_auto/dpr_1.5/c_scale,w_400/ncom/en_US/hardware/switch/switch-hw-pmp/oled/04-storage" alt="">
+                </li>
+                <li class="collectionsListItem">
+                    <img src="https://assets.nintendo.com/image/upload/f_auto/q_auto/dpr_1.5/c_scale,w_400/ncom/en_US/hardware/switch/switch-hw-pmp/oled/03-LAN" alt="">
+                </li>
+                <li class="collectionsListItem">
+                    <img src="https://assets.nintendo.com/image/upload/f_auto/q_auto/dpr_1.5/c_scale,w_400/ncom/en_US/hardware/switch/switch-hw-pmp/oled/04-storage" alt="">
+                </li>
+            </ul>
+        </section>
+        <section class="info">
+            <div class="block">
+                <h2 class="infoTitle">Why</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem voluptates ullam quasi ex perferendis ipsa, temporibus accusamus, nihil quos dicta obcaecati expedita tenetur eaque voluptatem illo eligendi tempore? Consectetur, sed!
+                Fuga dolorem alias modi cum voluptas similique debitis cupiditate odio est! Maiores, nemo! Hic, praesentium accusantium repellendus reprehenderit expedita culpa odit consequatur blanditiis assumenda in quas, quidem quibusdam et temporibus.
+                Obcaecati labore inventore numquam magni tempore facere voluptatem voluptate temporibus aliquam eius. Ratione ab libero, quia perspiciatis reiciendis ipsum cupiditate dolorum, beatae quam, tempore rem! Impedit officiis dolore quia rerum!
+                Qui nam perspiciatis ab nemo minus animi repudiandae aliquam maiores ut aliquid cupiditate, ipsam, molestiae vel! Est consequuntur impedit, expedita delectus voluptatibus optio pariatur harum mollitia aperiam architecto deleniti dicta.
+                Nostrum qui molestias saepe quis vitae sequi nihil, veniam asperiores magni harum odio reiciendis labore explicabo velit sapiente fuga incidunt impedit nisi! Ullam illum quo provident esse sequi exercitationem laborum.</p>    
+            </div>
+            <div class="block">
+                <h2 class="infoTitle">What</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id iste unde ipsa suscipit repellendus distinctio dolore facere enim earum fuga quidem ab quasi ipsum expedita nam, molestiae et voluptatibus doloremque?
+                Minus ut voluptatem porro autem ea voluptatum deserunt culpa qui aut, officia dolorum soluta recusandae praesentium quidem minima totam sed eaque voluptate ipsam. Iste vitae magni sapiente voluptatum similique excepturi.
+                Quaerat suscipit eligendi aut nam nesciunt sunt fugit iste, recusandae minima natus dolor ullam aperiam dignissimos maiores atque quasi enim. Fuga quam ipsam dolorem excepturi iste nemo, impedit accusantium odit!
+                Praesentium officiis nulla maiores tempore. Aspernatur, tempora eum maiores quae at, molestias dolorum illo nesciunt modi atque possimus animi facere doloribus est veniam consequuntur voluptates dolor ipsum voluptas quibusdam dolorem?
+                Eaque minus repudiandae eum eos quos architecto hic voluptatem voluptatibus, laborum provident culpa itaque! Blanditiis est quos neque vel cumque consectetur veritatis. Dignissimos facilis quibusdam, ad deleniti non fugit magni!</p>    
+            </div>
+        </section>
+
+        <section id="form1">
+            <form >
+                <p>
+                  <label for="name">Naam</label>
+                  <input type="text" id="name" name="user_name" required/>
+                </p>
+                <p>
+                  <label for="mail">Email</label>
+                  <input type="email" id="mail" name="user_email" required/>
+                </p>
+                <p>
+                  <label for="msg">Bericht</label>
+                  <textarea id="msg" name="user_message " style="resize: none" required></textarea>
+                </p>
+                <p>
+                    <label for="agree">
+                        Akkoord?
+                        <input type="checkbox" id="agree" name="agree" required>
+                    </label>
+                  </p>
+
+              
+                <p class="button">
+                    <button class="button-12" role="button-12" type="submit">Verzenden</button>
+                  </p>
+
+              </form>
+        </section>
+    </main>
+
+    <footer style="height: auto 10rem; background-color: grey;">
+        <div class="button-container">
+            <div><p1 class="knop 1">Adres</p1>
+                <p2>Contactweg 24, Amsterdam <br> <br>1014 BH
+                </p2>
+            </div>
+            <div><p1 class="knop 2">Socials</p1>
+                <p2><a href="https://x.com/nintendoamerica">X</a></p2><br>
+                <p2><a href="https://www.instagram.com/NintendoNL/">Instagram</a></p2><br>
+                <p2><a href="https://www.youtube.com/user/NintendoNederland">Youtube</a></p2><br>
+                <p2><a href="https://www.facebook.com/NintendoAmerica/">Facebook</a></p2><br>
+                <p2><a href="https://www.nintendo.com/nl-nl/">Webiste</a></p2>
+            </div>
+            <div><p1 class="knop 3">Openingstijden</p1>
+                <p2>Maandag - 11:00 - 21:00</p2><br>
+                <p2>Dindsdag - 11:00 - 21:00</p2><br>
+                <p2>Woensdag - 11:00 - 21:00</p2><br>
+                <p2>Donderdag - 11:00 - 21:00</p2><br>
+                <p2>Vrijdag - 11:00 - 21:00</p2><br>
+                <p2>Zaterdag - 11:00 - 21:00</p2><br>
+                <p2>Zondag - 11:00 - 20:00</p2>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
