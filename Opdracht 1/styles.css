@@ -345,7 +345,7 @@ a{
     width: 30.0rem;
     box-sizing: border-box;
     border: 0.1rem solid #999;
-    border-radius: 1.1rem;
+    border-radius: 0.7rem;
   }
   
   input:focus, textarea:focus {

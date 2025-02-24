@@ -4,8 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Opdracht 2</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js" defer></script>
+
 </head>
+
 <body>
-    
+    <article class="card"></article>
+    <article class="card"></article>
+    <article class="card card--stopwatch">
+        <div>
+            <span class="timerText" id="js--minutesTimer">00</span>
+            <span class="timerText" >:</span>
+            <span class="timerText" id="js--secondsTimer">00</span>
+        </div>
+        <section class="buttonWrapper">
+            <button class="button button--start" id="js--start">Start</button>
+            <button class=" button button--stop" id="js--stop">Stop</button>
+            <button class="button button--reset" id="js--reset">Reset</button>
+        </section>
+    </article>
 </body>
+
 </html>
