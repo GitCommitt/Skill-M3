@@ -9,11 +9,18 @@
 
 </head>
 
-<body>
-    <article class="card"></article>
-    <article class="card"></article>
+<body id="js--body">
+
+    <article class="card card--slider">
+        <h1>Slider</h1>
+        <h2 id="js--rangeValue">0</h2>
+        <input id="js--slider" type="range" min="1" max="5" step="1">
+    </article>
+
     <article class="card card--stopwatch">
+        
         <div>
+            <h1>Stopwatch</h1>
             <span class="timerText" id="js--minutesTimer">00</span>
             <span class="timerText" >:</span>
             <span class="timerText" id="js--secondsTimer">00</span>
@@ -23,6 +30,10 @@
             <button class=" button button--stop" id="js--stop">Stop</button>
             <button class="button button--reset" id="js--reset">Reset</button>
         </section>
+    </article>
+
+    <article class="card">
+
     </article>
 </body>
 

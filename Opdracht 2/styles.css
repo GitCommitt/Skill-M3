@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 html{
@@ -28,6 +29,49 @@ body{
     flex-shrink: 0;
 }
 
+.card--slider > h2{
+    font-size: 5rem;
+}
+
+.card--slider > input{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    border-radius: 1rem;
+    height: 3rem;
+    background: linear-gradient(to right, green, orange, red);
+}
+
+.card--slider > input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: transparent;
+    cursor: pointer;
+    border-radius: 1rem;
+    border: 0.4rem white solid;
+  }
+  
+  .card--slider > input::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: transparent;
+    cursor: pointer;
+    border-radius: 1rem;
+    border: 0.4rem white solid;
+  }
+
+.card--slider{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    padding: 4rem;
+}
+
+
 .card--stopwatch{
     display: flex;
     justify-content: center;
@@ -40,6 +84,7 @@ body{
     padding: 1rem 2rem;
     font-size: 2rem;
     color: white;
+    border-radius: 1rem;
 }
 
 .button--start{
@@ -55,5 +100,5 @@ body{
 }
 
 .timerText{
-    font-size: 200%;
+    font-size: 5rem;
 }

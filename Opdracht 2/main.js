@@ -1,14 +1,14 @@
+/* Timer */
+
 const startButton = document.getElementById("js--start");
 const stopButton = document.getElementById("js--stop");
 const resetButton = document.getElementById("js--reset");
+const secondsTimer = document.getElementById("js--secondsTimer");
+const minutesTimer = document.getElementById("js--minutesTimer");
 
 let seconds = 0;
 let minutes = 0;
 let running = false;
-
-const secondsTimer = document.getElementById("js--secondsTimer");
-const minutesTimer = document.getElementById("js--minutesTimer");
-
 let timer;
 
 startButton.onclick = function(){
@@ -43,4 +43,18 @@ resetButton.onclick = function(){
         minutesTimer.innerText = minutes;
     }
     
+}
+
+
+/* slider */
+
+const rangeValue = document.getElementById("js--rangeValue");
+const slider = document.getElementById("js--slider");
+const body = document.getElementById("js--body");
+slider.value = "2";
+rangeValue.innerHTML = slider.value + " x";
+
+slider.oninput = function(){
+    rangeValue.innerHTML = slider.value + " x";
+    body.style.fontSize = slider.value + "rem";
 }
