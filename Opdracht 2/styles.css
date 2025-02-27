@@ -1,14 +1,14 @@
+@font-face {
+    font-family: 'NewFont';
+    src: url('SuperPlants-lgDRV.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-}
-
-@font-face {
-    font-family: 'CherryPie';
-    src: url('KgHappyShadows-7KqA.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
 }
 
 html{
@@ -25,7 +25,7 @@ body{
     align-items: center;
     min-height: 100vh;
     flex-wrap: wrap;
-    font-family: 'CherryPie', sans-serif;
+    font-family: 'NewFont', sans-serif;
 }
 
 .card{
@@ -37,7 +37,7 @@ body{
 }
 
 .card--slider > h2{
-    font-size: 5rem;
+    /*font-size: 5rem;*/ /*werkt niet met de grote veranderen met de slider*/
 }
 
 .card--slider > input{
@@ -107,5 +107,10 @@ body{
 }
 
 .timerText{
-    font-size: 5rem;
+    /*font-size: 5rem;*/ /*werkt niet met de grote veranderen met de slider*/
+}
+
+
+h1{
+    /*font-size: 5rem;*/ /*werkt niet met de grote veranderen met de slider*/
 }
