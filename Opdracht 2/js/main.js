@@ -19,32 +19,27 @@ startButton.onclick = function(){
     timer = setInterval(function(){
         seconds = seconds + 1;
         if (seconds === 60) {
-            minutes = minutes +1;
-            minutesTimer.innerText = minutes;
+            minutes = minutes + 1;
+            minutesTimer.innerText = String(minutes).padStart(2, '0');
             seconds = 0;
         }
-        secondsTimer.innerText = seconds;
-    }, 100);
+        secondsTimer.innerText = String(seconds).padStart(2, '0');
+    }, 1000);
 }
 
-
 stopButton.onclick = function(){
-     clearInterval(timer);
-     running = false;
+    clearInterval(timer);
+    running = false;
 }
 
 resetButton.onclick = function(){
-    resetButton.onclick = function(){
-        clearInterval(timer);
-        running = false;
-        seconds = 0;
-        minutes = 0;
-        secondsTimer.innerText = seconds;
-        minutesTimer.innerText = minutes;
-    }
-    
+    clearInterval(timer);
+    running = false;
+    seconds = 0;
+    minutes = 0;
+    secondsTimer.innerText = "00";
+    minutesTimer.innerText = "00";
 }
-
 
 /* slider */
 
@@ -58,3 +53,19 @@ slider.oninput = function(){
     rangeValue.innerHTML = slider.value + " x";
     body.style.fontSize = slider.value + "rem";
 }
+
+
+//Data Json
+
+const paragraph = document.getElementById("js--text");
+const imgElement = document.getElementById("js--img");
+
+let data = fetch("./data.json").then(
+    function(binnenGekomenData) {
+        return binnenGekomenData.json();
+    }).then(
+        function(echteData) {
+            paragraph.innerText = echteData.text;
+            imgElement.setAttribute("src", echteData.img);
+        }
+    );

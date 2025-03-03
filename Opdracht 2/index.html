@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Opdracht 2</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="main.js" defer></script>
+    <script src="js/main.js" defer></script>
 
 </head>
-
 <body id="js--body">
-
+    <header>
+        <h1>Daan Pronk</h1>
+    </header>
     <article class="card card--slider">
         <h1>Slider</h1>
         <h2 id="js--rangeValue">0</h2>
@@ -21,18 +22,19 @@
         <h1>Stopwatch</h1>
         <div>
             <span class="timerText" id="js--minutesTimer">00</span>
-            <span class="timerText" >:</span>
+            <span class="timerText">:</span>
             <span class="timerText" id="js--secondsTimer">00</span>
         </div>
         <section class="buttonWrapper">
             <button class="button button--start" id="js--start">Start</button>
-            <button class=" button button--stop" id="js--stop">Stop</button>
+            <button class="button button--stop" id="js--stop">Stop</button>
             <button class="button button--reset" id="js--reset">Reset</button>
         </section>
     </article>
 
-    <article class="card">
-
+    <article class="card card--buy">
+        <img id="js--img" alt="">
+        <p id="js--text"></p>
     </article>
 </body>
 
