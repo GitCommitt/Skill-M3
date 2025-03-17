@@ -41,21 +41,25 @@ resetButton.onclick = function(){
     minutesTimer.innerText = "00";
 }
 
-/* slider */
+/* Slider */
 
 const rangeValue = document.getElementById("js--rangeValue");
 const slider = document.getElementById("js--slider");
 const body = document.getElementById("js--body");
-slider.value = "2";
+
+slider.value = "2"; 
 rangeValue.innerHTML = slider.value + " x";
+
+body.style.fontSize = `${1 + parseInt(slider.value)}rem`;
 
 slider.oninput = function(){
     rangeValue.innerHTML = slider.value + " x";
-    body.style.fontSize = slider.value + "rem";
+    
+    let fontSize = 1 + parseInt(slider.value);
+    body.style.fontSize = fontSize + "rem";
 }
 
-
-//Data Json
+// Data JSON
 
 const paragraph = document.getElementById("js--text");
 const imgElement = document.getElementById("js--img");
@@ -69,3 +73,41 @@ let data = fetch("./data.json").then(
             imgElement.setAttribute("src", echteData.img);
         }
     );
+    
+
+    document.addEventListener("DOMContentLoaded", function() {
+        const smallImg = document.getElementById("js--img");
+        const modal = document.getElementById("imageModal");
+        const largeImg = document.getElementById("largeImage");
+        const closeBtn = document.querySelector(".close");
+    
+        smallImg.onclick = function() {
+            largeImg.src = this.src;
+            modal.style.display = "flex";
+        };
+    
+        closeBtn.onclick = function() {
+            modal.style.display = "none";
+        };
+    
+        modal.onclick = function(event) {
+            if (event.target === modal) {
+                modal.style.display = "none";
+            }
+        };
+    });
+    
+
+// Sidebar
+
+function toggleSidebar() {
+    const sidebar = document.getElementById("sidebar");
+    const toggleBtn = document.querySelector(".toggle-btn");
+    if (sidebar.style.left === "0px") {
+        sidebar.style.left = "-25rem";
+        toggleBtn.style.display = "block";
+    } else {
+        sidebar.style.left = "0px";
+        toggleBtn.style.display = "none";
+    }
+}

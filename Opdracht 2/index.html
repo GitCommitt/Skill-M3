@@ -6,16 +6,16 @@
     <title>Opdracht 2</title>
     <link rel="stylesheet" href="styles.css">
     <script src="js/main.js" defer></script>
-
 </head>
 <body id="js--body">
     <header>
         <h1>Daan Pronk</h1>
     </header>
+    
     <article class="card card--slider">
         <h1>Slider</h1>
         <h2 id="js--rangeValue">0</h2>
-        <input id="js--slider" type="range" min="1" max="5" step="1">
+        <input id="js--slider" type="range" min="1" max="3" step="1">
     </article>
 
     <article class="card card--stopwatch">
@@ -33,9 +33,21 @@
     </article>
 
     <article class="card card--buy">
-        <img id="js--img" alt="">
+        <img id="js--img" src="" alt="" style="cursor: pointer;">
         <p id="js--text"></p>
     </article>
-</body>
 
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img id="largeImage" class="modal-content">
+    </div>
+    <button class="toggle-btn" onclick="toggleSidebar()"><img id="img--menu" src="img/menudo.png" alt=""></button>
+    <div class="sidebar" id="sidebar">
+        <h2>Menu</h2>
+        <a href="#">Slider</a>
+        <a href="#">Stopwatch</a>
+        <a href="#">Image</a>
+        <button class="close-btn" onclick="toggleSidebar()">✖</button>
+    </div>
+</body>
 </html>
