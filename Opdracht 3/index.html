@@ -3,19 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pokémon, Leeftijd & Filmzoeker</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Rubik:wght@700&display=swap" rel="stylesheet">
     <script src="js/main.js" defer></script>
 </head>
 <body>
+    <ul class="cards">
+        <li class="card pokemon-card">
+            <h2 id="js--pokemon-text-1">Een wilde Pokemon is gekomen!</h2>
+            <img id="js--pokemon-image-1" src="" alt="">
+            <button id="js--catch-button-1">Catch</button>
+        </li>
 
-    <ul class="cards" >
-        <li class="card">
-            <h2 id="js--pokemon-text">Een wilde Pokemon is gekomen!</h2>
-            <img id="js--pokemon-image" src="" alt="">
-            <button id="js--catch-button" >catch</button>
+        <li class="card leeftijd-card">
+            <h2 id="js--leeftijd-text">Voer een naam in en bekijk de gemiddelde leeftijd</h2>
+            <div class="input">
+                <input type="text" id="js--name" placeholder="Zoek een naam">
+                <button id="js--predict-button">Zoek</button>
+            </div>
+            <div id="js--leeftijd-result"></div>
+        </li>
+        
+        <li class="card film-card">
+            <h2>Filmzoeker</h2>
+            <div class="input">
+                <input type="text" id="js--film-input" placeholder="Zoek een film">
+                <button id="js--zoek-button">Zoek</button>
+            </div>
+            <div id="js--film-result">
+                <h3 id="js--film-title"></h3>
+                <p id="js--film-beschrijving"></p>
+            </div>
         </li>
     </ul>
-    
 </body>
 </html>
