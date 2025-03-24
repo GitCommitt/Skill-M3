@@ -1,4 +1,3 @@
-// Pokémon Card
 const randomNumber = Math.floor(Math.random() * 250) + 1;
 const pokemonImage = document.getElementById("js--pokemon-image-1");
 const catchButton = document.getElementById("js--catch-button-1");
