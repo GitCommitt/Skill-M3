@@ -1,8 +1,7 @@
 @font-face {
     font-family: 'NewFont';
     src: url('font/SuperPlants-lgDRV.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+
 }
 
 *{
